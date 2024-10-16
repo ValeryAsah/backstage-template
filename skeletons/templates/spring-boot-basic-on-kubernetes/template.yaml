@@ -54,7 +54,7 @@ spec:
         javaPackage:
           title: Java package directory
           type: string
-          default: pl/valery/services
+          default: pl/axs/services
         apiPath:
           title: REST API path
           type: string
