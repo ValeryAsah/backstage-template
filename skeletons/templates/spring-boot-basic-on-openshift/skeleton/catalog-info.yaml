@@ -10,6 +10,7 @@ metadata:
     sonarqube.org/project-key: ${{ values.orgName }}_${{ values.appName }}
     backstage.io/kubernetes-id: ${{ values.appName }}
     argocd/app-name: ${{ values.appName }}
+    backstage.io/techdocs-ref: dir:.
     prometheus.io/rule: container_memory_usage_bytes{pod=~"${{ values.appName }}-.*"}|pod,rate(container_cpu_usage_seconds_total{pod=~"${{ values.appName }}-.*"}[5m])|pod
   tags:
     - spring-boot
