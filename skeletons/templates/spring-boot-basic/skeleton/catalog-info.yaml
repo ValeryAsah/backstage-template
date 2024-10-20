@@ -10,6 +10,7 @@ metadata:
     backstage.io/techdocs-ref: dir:.
     prometheus.io/rule: container_memory_usage_bytes{pod=~"${{ values.appName }}-.*"}|pod,rate(container_cpu_usage_seconds_total{pod=~"${{ values.appName }}-.*"}[5m])|pod
     prometheus.io/alert: all
+    backstage.io/kubernetes-id: tools_us_dev3
   tags:
     - spring-boot
     - java
