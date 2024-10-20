@@ -80,6 +80,7 @@ spec:
           type: string
           description: The AWS region where the cluster will be deployed
           enum:
+            - us-west-2
             - eu-west-2
             - eu-west-1
         action:
