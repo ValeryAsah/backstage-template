@@ -10,6 +10,7 @@ metadata:
     backstage.io/techdocs-ref: dir:.
     prometheus.io/rule: container_memory_usage_bytes{pod=~"${{ values.appName }}-.*"}|pod,rate(container_cpu_usage_seconds_total{pod=~"${{ values.appName }}-.*"}[5m])|pod
     aws.amazon.com/aws-codebuild-project-arn: arn:aws:codebuild:us-west-2:971217900852:project/ecrretagged-purge
+    aws.amazon.com/aws-codepipeline-arn: arn:aws:codepipeline:us-west-2:971217900852:terraform-spinnakerlegacy-dev1
     prometheus.io/alert: all
     backstage.io/kubernetes-id: tools_us_dev3
   tags:
